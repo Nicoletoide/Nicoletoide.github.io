@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nicoletoide — Apps</title>
+<meta name="description" content="Apps de Nicoletoide para iOS.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/png" href="ayunate/assets/icon-small.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="ayunate/assets/icon-light-small.png" media="(prefers-color-scheme: light)">
+<link rel="stylesheet" href="assets/portal.css">
+<script>
+// Resuelve el tema antes del primer paint (evita el flash de tema incorrecto).
+(function () {
+  var saved = localStorage.getItem("nicoletoide-theme");
+  var theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+</head>
+<body>
+
+  <div class="controls">
+    <button class="theme-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+    </button>
+  </div>
+
+  <header class="intro">
+    <h1>Nicoletoide</h1>
+    <p>Apps para iOS, hechas por un solo desarrollador. Elegí una para ver más.</p>
+  </header>
+
+  <section class="products">
+    <div class="wrap">
+      <div class="product-grid">
+        <a class="product-card" href="ayunate/">
+          <img src="ayunate/assets/icon-small.png" data-src-dark="ayunate/assets/icon-small.png" data-src-light="ayunate/assets/icon-light-small.png" alt="Ícono de Ayunate">
+          <h2>Ayunate</h2>
+          <p>Ayuno intermitente a tu ritmo. Sin cuenta, sin nube, sin anuncios.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    © 2026 Nicoletoide.
+  </footer>
+
+  <script>
+  (function () {
+    var root = document.documentElement;
+    function applyImages() {
+      var theme = root.getAttribute("data-theme");
+      document.querySelectorAll("img[data-src-light]").forEach(function (img) {
+        var src = theme === "light" ? img.getAttribute("data-src-light") : img.getAttribute("data-src-dark");
+        if (src) img.setAttribute("src", src);
+      });
+    }
+    applyImages();
+    var btn = document.querySelector(".theme-toggle");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        localStorage.setItem("nicoletoide-theme", next);
+        root.setAttribute("data-theme", next);
+        applyImages();
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

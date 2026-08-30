@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayunate — Your fast. Your rhythm.</title>
+<meta name="description" content="Ayunate helps you build a fasting routine around your life — not the other way around. Private by design: no account, no cloud, no ads.">
+<meta name="robots" content="index, follow">
+
+<!-- TODO: reemplazar https://ayunate.app por el dominio real en cuanto se compre
+     (acá, en es/index.html, sitemap.xml y robots.txt — son los únicos 4 lugares). -->
+<link rel="canonical" href="https://ayunate.app/">
+<link rel="alternate" hreflang="en" href="https://ayunate.app/">
+<link rel="alternate" hreflang="es" href="https://ayunate.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://ayunate.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ayunate">
+<meta property="og:title" content="Ayunate — Your fast. Your rhythm.">
+<meta property="og:description" content="Ayunate helps you build a fasting routine around your life — not the other way around. Private by design: no account, no cloud, no ads.">
+<meta property="og:url" content="https://ayunate.app/">
+<meta property="og:image" content="https://ayunate.app/assets/icon.png">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ayunate — Your fast. Your rhythm.">
+<meta name="twitter:description" content="Ayunate helps you build a fasting routine around your life — not the other way around.">
+<meta name="twitter:image" content="https://ayunate.app/assets/icon.png">
+
+<link rel="icon" type="image/png" href="assets/icon-small.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="assets/icon-light-small.png" media="(prefers-color-scheme: light)">
+<link rel="apple-touch-icon" href="assets/icon-small.png">
+<link rel="stylesheet" href="assets/site.css">
+<script>
+// Resuelve el tema antes del primer paint (evita el flash de tema incorrecto).
+(function () {
+  var saved = localStorage.getItem("ayunate-theme");
+  var theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ayunate",
+  "operatingSystem": "iOS",
+  "applicationCategory": "HealthApplication",
+  "url": "https://ayunate.app/",
+  "image": "https://ayunate.app/assets/icon.png",
+  "description": "Ayunate helps you build a fasting routine around your life — not the other way around. Private by design: no account, no cloud, no ads.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "inLanguage": ["en", "es"]
+}
+</script>
+</head>
+<body>
+
+  <div class="controls">
+    <button class="theme-toggle" type="button" aria-label="Switch between light and dark theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+    </button>
+    <nav class="lang-switch" aria-label="Language">
+      <a href="index.html" aria-current="true">EN</a>
+      <a href="es/index.html">ES</a>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <img class="icon" src="assets/icon-small.png" data-src-dark="assets/icon-small.png" data-src-light="assets/icon-light-small.png" alt="Ayunate app icon">
+      <h1>Your fast.<br>Your rhythm.</h1>
+      <p class="subhead">Ayunate helps you build a fasting routine around your life — not the other way around.</p>
+      <p class="differentiator">Private by design. No account. No cloud. No ads.</p>
+
+      <!-- Replace "#" with the real App Store Connect URL at launch. -->
+      <a class="cta" href="#" id="app-store-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12"></path>
+          <path d="M7 10l5 5 5-5"></path>
+          <path d="M5 21h14"></path>
+        </svg>
+        Download on the App Store
+      </a>
+    </div>
+
+    <div class="phone-stage">
+      <div class="phone">
+        <img src="assets/hero-en.jpg" data-src-dark="assets/hero-en.jpg" data-src-light="assets/hero-en-light.jpg" alt="Ayunate ring showing all five metabolic stages, in dark and minimalist mode">
+      </div>
+    </div>
+  </header>
+
+  <section class="benefits">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Fasting without the noise.</h2>
+        <p>Everything you need to stay focused. Nothing you don't.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg>
+          </div>
+          <h3>Know exactly where you are</h3>
+          <p>Your fasting time is always clear. No confusing stages or unnecessary noise.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"></rect><path d="M11 18h2"></path></svg>
+          </div>
+          <h3>Always with you</h3>
+          <p>See your progress from your Lock Screen, Dynamic Island, or Home Screen.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path><path d="M8 2v4M16 2v4"></path></svg>
+          </div>
+          <h3>Fast around your real life</h3>
+          <p>Choose your own fasting windows or let Ayunate help you build a rhythm.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V13"></path><path d="M11 20V7"></path><path d="M18 20V16"></path></svg>
+          </div>
+          <h3>See patterns, not just numbers</h3>
+          <p>Understand how your fasting habits change over time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="daily-experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>One fast at a time.</h2>
+        <p>Start when you're ready. Ayunate quietly keeps track of the rest.</p>
+      </div>
+
+      <div class="spotlight">
+        <div class="phone-stage">
+          <div class="phone">
+            <img src="assets/ring-en.jpg" data-src-dark="assets/ring-en.jpg" data-src-light="assets/ring-en-light.jpg" alt="Ayunate's fasting ring in guided mode, mid-fast, showing every metabolic stage reached so far and context for the current stage">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="personalization">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Built around your life.</h2>
+        <p>There isn't one perfect fasting schedule. Your routine should work with your life.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="assets/onboarding-plan-en.jpg" data-src-dark="assets/onboarding-plan-en.jpg" data-src-light="assets/onboarding-plan-en-light.jpg" alt="Step for choosing a fasting pace: 14:10, 16:8, 18:6, 22:2, or custom"></div>
+          <h3>Choose your rhythm</h3>
+          <p>Tell Ayunate what your day looks like.</p>
+        </figure>
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="assets/onboarding-schedule-en.jpg" data-src-dark="assets/onboarding-schedule-en.jpg" data-src-light="assets/onboarding-schedule-en-light.jpg" alt="Step for choosing a schedule, with a window recommended for your profile"></div>
+          <h3>Get a starting point</h3>
+          <p>Receive a schedule based on your routine.</p>
+        </figure>
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="assets/onboarding-display-en.jpg" data-src-dark="assets/onboarding-display-en.jpg" data-src-light="assets/onboarding-display-en-light.jpg" alt="Step for choosing guided or minimalist mode"></div>
+          <h3>Make it yours</h3>
+          <p>Use guidance when you need it. Keep things simple when you don't.</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="progress">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Progress you can actually understand.</h2>
+        <p>Every fast is recorded automatically, helping you see your consistency and patterns over time.</p>
+      </div>
+
+      <div class="gallery gallery-2">
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="assets/stats.jpg" data-src-dark="assets/stats.jpg" data-src-light="assets/stats-light.jpg" alt="Weekly progress chart, with total fasts, goals met, average and longest fast"></div>
+          <h3>Your week, at a glance</h3>
+          <p>See exactly when you fasted, not just how long.</p>
+        </figure>
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="assets/achievements.jpg" data-src-dark="assets/achievements.jpg" data-src-light="assets/achievements-light.jpg" alt="Achievement badges unlocked as you stay consistent"></div>
+          <h3>Small wins, marked</h3>
+          <p>Milestones that show up as you stay consistent.</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Your data stays yours.</h2>
+      <div class="privacy-marks">
+        <span>No account.</span>
+        <span>No cloud.</span>
+        <span>No ads.</span>
+      </div>
+      <p>Your fasting history stays on your device.</p>
+      <div class="privacy-icons">
+        <div class="privacy-icon" title="On your device">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"></rect><path d="M11 18h2"></path></svg>
+        </div>
+        <div class="privacy-icon" title="No cloud profile">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A5.5 5.5 0 0 1 17.2 9.05 4 4 0 0 1 17 18H7Z"></path><path d="M3 3l18 18"></path></svg>
+        </div>
+        <div class="privacy-icon" title="No ads">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="M8 19v-9l4 4 4-4v9"></path><path d="M3 3l18 18"></path></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <h2>Start with your next fast.</h2>
+      <p>Simple, private, and built around your life.</p>
+      <a class="cta" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12"></path>
+          <path d="M7 10l5 5 5-5"></path>
+          <path d="M5 21h14"></path>
+        </svg>
+        Download on the App Store
+      </a>
+      <p class="cta-note">No account required.</p>
+
+      <div class="health-note">
+        Intermittent fasting isn't for everyone. Talk to a healthcare professional before starting if you're pregnant or breastfeeding, take medication for diabetes, have a history of disordered eating, or are under 18. Ayunate is a tracking tool, not medical advice.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="privacidad.html">Privacy Policy</a>
+      <!-- TODO: public contact channel still needs to be decided before launch. -->
+    </div>
+    © 2026 Ayunate. All rights reserved.
+  </footer>
+
+  <script>
+  (function () {
+    var root = document.documentElement;
+    function applyImages() {
+      var theme = root.getAttribute("data-theme");
+      document.querySelectorAll("img[data-src-light]").forEach(function (img) {
+        var src = theme === "light" ? img.getAttribute("data-src-light") : img.getAttribute("data-src-dark");
+        if (src) img.setAttribute("src", src);
+      });
+    }
+    applyImages();
+    var btn = document.querySelector(".theme-toggle");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        localStorage.setItem("ayunate-theme", next);
+        root.setAttribute("data-theme", next);
+        applyImages();
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayunate — Tu ayuno. Tu ritmo.</title>
+<meta name="description" content="Ayunate te ayuda a construir una rutina de ayuno intermitente que se adapta a tu vida, no al revés. Privada por diseño: sin cuenta, sin nube, sin anuncios.">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://ayunate.app/es/">
+<link rel="alternate" hreflang="en" href="https://ayunate.app/">
+<link rel="alternate" hreflang="es" href="https://ayunate.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://ayunate.app/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ayunate">
+<meta property="og:title" content="Ayunate — Tu ayuno. Tu ritmo.">
+<meta property="og:description" content="Ayunate te ayuda a construir una rutina de ayuno intermitente que se adapta a tu vida, no al revés. Privada por diseño: sin cuenta, sin nube, sin anuncios.">
+<meta property="og:url" content="https://ayunate.app/es/">
+<meta property="og:image" content="https://ayunate.app/assets/icon.png">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ayunate — Tu ayuno. Tu ritmo.">
+<meta name="twitter:description" content="Ayunate te ayuda a construir una rutina de ayuno intermitente que se adapta a tu vida, no al revés.">
+<meta name="twitter:image" content="https://ayunate.app/assets/icon.png">
+
+<link rel="icon" type="image/png" href="../assets/icon-small.png" media="(prefers-color-scheme: dark)">
+<link rel="icon" type="image/png" href="../assets/icon-light-small.png" media="(prefers-color-scheme: light)">
+<link rel="apple-touch-icon" href="../assets/icon-small.png">
+<link rel="stylesheet" href="../assets/site.css">
+<script>
+// Resuelve el tema antes del primer paint (evita el flash de tema incorrecto).
+(function () {
+  var saved = localStorage.getItem("ayunate-theme");
+  var theme = saved || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Ayunate",
+  "operatingSystem": "iOS",
+  "applicationCategory": "HealthApplication",
+  "url": "https://ayunate.app/es/",
+  "image": "https://ayunate.app/assets/icon.png",
+  "description": "Ayunate te ayuda a construir una rutina de ayuno intermitente que se adapta a tu vida, no al revés. Privada por diseño: sin cuenta, sin nube, sin anuncios.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "inLanguage": ["en", "es"]
+}
+</script>
+</head>
+<body>
+
+  <div class="controls">
+    <button class="theme-toggle" type="button" aria-label="Cambiar entre tema claro y oscuro">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path></svg>
+    </button>
+    <nav class="lang-switch" aria-label="Idioma">
+      <a href="../index.html">EN</a>
+      <a href="index.html" aria-current="true">ES</a>
+    </nav>
+  </div>
+
+  <header class="hero">
+    <div class="hero-copy">
+      <img class="icon" src="../assets/icon-small.png" data-src-dark="../assets/icon-small.png" data-src-light="../assets/icon-light-small.png" alt="Ícono de la app Ayunate">
+      <h1>Tu ayuno.<br>Tu ritmo.</h1>
+      <p class="subhead">Ayunate te ayuda a construir una rutina de ayuno que se adapta a tu vida, no al revés.</p>
+      <p class="differentiator">Privada por diseño. Sin cuenta. Sin nube. Sin anuncios.</p>
+
+      <!-- Reemplazar "#" con la URL real de App Store Connect al publicar. -->
+      <a class="cta" href="#" id="app-store-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12"></path>
+          <path d="M7 10l5 5 5-5"></path>
+          <path d="M5 21h14"></path>
+        </svg>
+        Descargar en la App Store
+      </a>
+    </div>
+
+    <div class="phone-stage">
+      <div class="phone">
+        <img src="../assets/hero-es.jpg" data-src-dark="../assets/hero-es.jpg" data-src-light="../assets/hero-es-light.jpg" alt="Aro de Ayunate mostrando las cinco etapas metabólicas, en modo oscuro y minimalista">
+      </div>
+    </div>
+  </header>
+
+  <section class="benefits">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Ayuno sin ruido.</h2>
+        <p>Todo lo que necesitás para mantener el foco. Nada de lo que no.</p>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"></circle><path d="M12 8v4l3 2"></path></svg>
+          </div>
+          <h3>Sabé exactamente en qué momento estás</h3>
+          <p>Tu tiempo de ayuno siempre es claro. Sin etapas confusas ni ruido innecesario.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"></rect><path d="M11 18h2"></path></svg>
+          </div>
+          <h3>Siempre con vos</h3>
+          <p>Mirá tu progreso desde la pantalla de bloqueo, la Isla Dinámica o la pantalla de inicio.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M3 10h18"></path><path d="M8 2v4M16 2v4"></path></svg>
+          </div>
+          <h3>Ayuná según tu vida real</h3>
+          <p>Elegí tus propias ventanas de ayuno o dejá que Ayunate te ayude a armar un ritmo.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="icon-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V13"></path><path d="M11 20V7"></path><path d="M18 20V16"></path></svg>
+          </div>
+          <h3>Mirá patrones, no solo números</h3>
+          <p>Entendé cómo cambian tus hábitos de ayuno con el tiempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="daily-experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Un ayuno a la vez.</h2>
+        <p>Empezá cuando estés listo. Ayunate se ocupa tranquilamente del resto.</p>
+      </div>
+
+      <div class="spotlight">
+        <div class="phone-stage">
+          <div class="phone">
+            <img src="../assets/ring-es.jpg" data-src-dark="../assets/ring-es.jpg" data-src-light="../assets/ring-es-light.jpg" alt="Aro de ayuno de Ayunate en modo guiado, a mitad de camino, mostrando cada etapa alcanzada y contexto sobre la etapa actual">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="personalization">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Pensada para tu vida.</h2>
+        <p>No existe un horario de ayuno perfecto. Tu rutina tiene que funcionar con tu vida.</p>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="../assets/onboarding-plan.jpg" data-src-dark="../assets/onboarding-plan.jpg" data-src-light="../assets/onboarding-plan-light.jpg" alt="Paso para elegir un ritmo de ayuno: 14:10, 16:8, 18:6, 22:2 o personalizado"></div>
+          <h3>Elegí tu ritmo</h3>
+          <p>Contale a Ayunate cómo es tu día.</p>
+        </figure>
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="../assets/onboarding-schedule.jpg" data-src-dark="../assets/onboarding-schedule.jpg" data-src-light="../assets/onboarding-schedule-light.jpg" alt="Paso para elegir un horario, con una ventana recomendada según tu perfil"></div>
+          <h3>Recibí un punto de partida</h3>
+          <p>Obtené un horario basado en tu rutina.</p>
+        </figure>
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="../assets/onboarding-display.jpg" data-src-dark="../assets/onboarding-display.jpg" data-src-light="../assets/onboarding-display-light.jpg" alt="Paso para elegir el modo guiado o minimalista"></div>
+          <h3>Hacela tuya</h3>
+          <p>Usá la guía cuando la necesitás. Simplificá cuando no.</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="progress">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Progreso que realmente entendés.</h2>
+        <p>Cada ayuno se registra automáticamente, para que veas tu constancia y tus patrones con el tiempo.</p>
+      </div>
+
+      <div class="gallery gallery-2">
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="../assets/stats.jpg" data-src-dark="../assets/stats.jpg" data-src-light="../assets/stats-light.jpg" alt="Gráfico de progreso semanal, con ayunos totales, metas cumplidas, promedio y ayuno más largo"></div>
+          <h3>Tu semana, de un vistazo</h3>
+          <p>Mirá exactamente cuándo ayunaste, no solo cuánto tiempo.</p>
+        </figure>
+        <figure class="gallery-item">
+          <div class="phone phone-sm"><img src="../assets/achievements.jpg" data-src-dark="../assets/achievements.jpg" data-src-light="../assets/achievements-light.jpg" alt="Insignias de logros que se desbloquean al mantener la constancia"></div>
+          <h3>Pequeños logros, marcados</h3>
+          <p>Hitos que aparecen a medida que sos constante.</p>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="privacy">
+    <div class="wrap">
+      <h2>Tus datos son tuyos.</h2>
+      <div class="privacy-marks">
+        <span>Sin cuenta.</span>
+        <span>Sin nube.</span>
+        <span>Sin anuncios.</span>
+      </div>
+      <p>Tu historial de ayunos se queda en tu dispositivo.</p>
+      <div class="privacy-icons">
+        <div class="privacy-icon" title="En tu dispositivo">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2.5"></rect><path d="M11 18h2"></path></svg>
+        </div>
+        <div class="privacy-icon" title="Sin perfil en la nube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A5.5 5.5 0 0 1 17.2 9.05 4 4 0 0 1 17 18H7Z"></path><path d="M3 3l18 18"></path></svg>
+        </div>
+        <div class="privacy-icon" title="Sin anuncios">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"></rect><path d="M8 19v-9l4 4 4-4v9"></path><path d="M3 3l18 18"></path></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <div class="wrap">
+      <h2>Empezá con tu próximo ayuno.</h2>
+      <p>Simple, privada, y pensada para tu vida.</p>
+      <a class="cta" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12"></path>
+          <path d="M7 10l5 5 5-5"></path>
+          <path d="M5 21h14"></path>
+        </svg>
+        Descargar en la App Store
+      </a>
+      <p class="cta-note">No necesitás cuenta.</p>
+
+      <div class="health-note">
+        El ayuno intermitente no es para todos. Consultá a un profesional de la salud antes de empezar si estás embarazada o en lactancia, tomás medicación para la diabetes, tenés antecedentes de trastornos alimentarios, o sos menor de 18 años. Ayunate es una herramienta de seguimiento, no un consejo médico.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="../privacidad.html">Política de Privacidad</a>
+      <!-- TODO: falta definir un canal de contacto público antes del lanzamiento. -->
+    </div>
+    © 2026 Ayunate. Todos los derechos reservados.
+  </footer>
+
+  <script>
+  (function () {
+    var root = document.documentElement;
+    function applyImages() {
+      var theme = root.getAttribute("data-theme");
+      document.querySelectorAll("img[data-src-light]").forEach(function (img) {
+        var src = theme === "light" ? img.getAttribute("data-src-light") : img.getAttribute("data-src-dark");
+        if (src) img.setAttribute("src", src);
+      });
+    }
+    applyImages();
+    var btn = document.querySelector(".theme-toggle");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        localStorage.setItem("ayunate-theme", next);
+        root.setAttribute("data-theme", next);
+        applyImages();
+      });
+    }
+  })();
+  </script>
+</body>
+</html>

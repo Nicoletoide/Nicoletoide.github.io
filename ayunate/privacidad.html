@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Ayunate</title>
+<style>
+  :root {
+    --cream: #fdf9f0;
+    --cream-2: #f5f0e4;
+    --ink: #2b2620;
+    --ink-soft: #6b6357;
+    --green: #2f9d5e;
+    --card: #ffffff;
+    --border: rgba(43, 38, 32, 0.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --cream: #17150f;
+      --cream-2: #1d1a13;
+      --ink: #f3efe6;
+      --ink-soft: #b8b0a1;
+      --green: #4fc784;
+      --card: #211e17;
+      --border: rgba(243, 239, 230, 0.08);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--cream) 0%, var(--cream-2) 100%);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 20px 60px;
+  }
+  a.back {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: var(--green);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  h1 { font-size: 28px; margin: 0 0 6px; letter-spacing: -0.01em; }
+  .updated { color: var(--ink-soft); font-size: 14px; margin: 0 0 32px; }
+  h2 {
+    font-size: 17px;
+    margin: 36px 0 10px;
+    color: var(--green);
+  }
+  p, li { font-size: 15px; color: var(--ink); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px 22px;
+    margin: 20px 0;
+  }
+  footer {
+    margin-top: 48px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← Ayunate</a>
+  <h1>Política de privacidad</h1>
+  <p class="updated">Última actualización: <!-- completar fecha de publicación -->[completar fecha]</p>
+
+  <p>Ayunate ("la app") es una aplicación de seguimiento de ayuno intermitente.
+  Esta política explica, en términos simples, qué información maneja la app y
+  qué no.</p>
+
+  <div class="card">
+    <strong>Resumen:</strong> Ayunate no recolecta, no envía y no vende ningún
+    dato personal. No tiene servidores propios, no usa analíticas ni
+    publicidad, y no comparte información con terceros. Todo lo que
+    registrás vive únicamente en tu dispositivo.
+  </div>
+
+  <h2>Qué información guarda la app (y dónde)</h2>
+  <ul>
+    <li><strong>Tus ayunos</strong>: fecha de inicio y fin de cada ayuno, y el plan elegido. Se guardan en la base de datos local del dispositivo (SwiftData) y nunca salen de él.</li>
+    <li><strong>Tus preferencias</strong>: plan de ayuno, horarios, días de la semana, modo de visualización, apariencia y avisos. Se guardan en las preferencias locales de iOS (<code>UserDefaults</code>).</li>
+    <li><strong>Foto de fondo personalizada</strong> (opcional): si elegís una foto propia para el fondo de la pantalla principal, se guarda solo en el almacenamiento local de la app. Nunca se sube a ningún servidor.</li>
+    <li><strong>Widget y Live Activity</strong>: para mostrar tu ayuno en curso en la pantalla de inicio, pantalla de bloqueo y Dynamic Island, la app comparte el estado del ciclo con su propia extensión de widget mediante un contenedor privado de Apple ("App Group") — no accesible por ninguna otra app.</li>
+    <li><strong>Notificaciones</strong>: se programan de forma local en tu dispositivo. No usamos notificaciones push ni un servidor propio.</li>
+  </ul>
+
+  <h2>Lo que la app NO hace</h2>
+  <ul>
+    <li>No pide crear una cuenta ni un login.</li>
+    <li>No usa herramientas de analítica ni SDKs de terceros.</li>
+    <li>No muestra publicidad ni comparte datos con redes publicitarias.</li>
+    <li>No accede a tu ubicación, contactos, micrófono ni cámara.</li>
+    <li>No usa HealthKit ni comparte información con la app Salud.</li>
+    <li>No transmite ningún dato por internet: funciona íntegramente sin conexión a un servidor propio.</li>
+  </ul>
+
+  <h2>Aviso de salud</h2>
+  <p>Ayunate incluye, en el primer uso y en Ajustes, un aviso sobre a quién no
+  le conviene ayunar y cuándo conviene cortar un ayuno. Es información
+  general y no reemplaza el consejo de un profesional de la salud. Verlo no
+  implica ningún registro ni envío de datos.</p>
+
+  <h2>Cómo borrar tu información</h2>
+  <ul>
+    <li>Podés borrar tu historial de ayunos desde <strong>Ajustes → Borrar historial</strong>, sin afectar tu ayuno en curso.</li>
+    <li>Si desinstalás la app, iOS elimina automáticamente todos los datos que Ayunate guardó en el dispositivo.</li>
+  </ul>
+
+  <h2>Menores de edad</h2>
+  <p>Ayunate no está dirigida a menores de 13 años y no recolecta
+  intencionalmente información de menores. Como la app no recolecta datos de
+  ningún usuario, esto aplica a cualquier persona que la use.</p>
+
+  <h2>Cambios a esta política</h2>
+  <p>Si en el futuro Ayunate cambia lo que hace con la información, esta
+  política se actualiza primero, y la fecha de arriba va a reflejar el
+  cambio.</p>
+
+  <h2>Contacto</h2>
+  <p>Si tenés preguntas sobre esta política o sobre la app, escribí a:
+  <strong><a href="mailto:tu-email@ejemplo.com">tu-email@ejemplo.com</a></strong></p>
+
+  <footer>© 2026 Ayunate.</footer>
+</div>
+</body>
+</html>
