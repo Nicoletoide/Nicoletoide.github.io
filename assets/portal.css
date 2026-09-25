@@ -121,9 +121,9 @@ header.intro p {
 .product-card:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 
 .product-card img {
-  width: 56px;
-  height: 56px;
-  border-radius: 14px;
+  width: 84px;
+  height: 84px;
+  border-radius: 19px;
   display: block;
   margin-bottom: 14px;
 }

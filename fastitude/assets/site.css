@@ -138,9 +138,9 @@ header.hero {
 }
 .hero-copy { max-width: 500px; }
 .icon {
-  width: 58px;
-  height: 58px;
-  border-radius: 15px;
+  width: 92px;
+  height: 92px;
+  border-radius: 21px;
   box-shadow: 0 8px 22px var(--border);
   margin-bottom: 30px;
   display: block;
